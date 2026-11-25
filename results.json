@@ -1,0 +1,168 @@
+{
+  "raw_trips": 1083538,
+  "clean_trips": 1082913,
+  "removed_trips": 625,
+  "final_trips": 1082913,
+  "n_stations": 114,
+  "usertype_share": {
+    "member": 0.763,
+    "casual": 0.237
+  },
+  "median_duration_min": 6.2,
+  "n_samples": 1023828,
+  "zero_share": 0.6,
+  "demand_mean": 1.058,
+  "demand_max": 69,
+  "train_samples": 714764,
+  "test_samples": 306328,
+  "split_date": "2026-07-11 09:00:00",
+  "results": [
+    {
+      "model": "Baseline: TB lịch sử (trạm, giờ, cuối tuần)",
+      "MAE": 0.9368,
+      "RMSE": 1.8394,
+      "R2": 0.4256,
+      "train_time_sec": 0.0
+    },
+    {
+      "model": "Linear Regression",
+      "MAE": 0.9439,
+      "RMSE": 1.6652,
+      "R2": 0.5292,
+      "train_time_sec": 1.21
+    },
+    {
+      "model": "Decision Tree (max_depth=12)",
+      "MAE": 0.8768,
+      "RMSE": 1.5696,
+      "R2": 0.5817,
+      "train_time_sec": 8.45
+    },
+    {
+      "model": "Random Forest (100 cây)",
+      "MAE": 0.8609,
+      "RMSE": 1.5154,
+      "R2": 0.6101,
+      "train_time_sec": 95.85
+    },
+    {
+      "model": "XGBoost Regressor (Tối ưu)",
+      "MAE": 0.8726,
+      "RMSE": 1.4861,
+      "R2": 0.6251,
+      "train_time_sec": 19.54
+    }
+  ],
+  "rf_importance": {
+    "demand_lag_1h": 0.397,
+    "demand_lag_24h": 0.3226,
+    "station_mean": 0.0676,
+    "rolling_mean_3h": 0.0514,
+    "hour_cos": 0.0378,
+    "dayofweek": 0.0254,
+    "hour_sin": 0.0139,
+    "hour": 0.0133,
+    "is_rush": 0.0119,
+    "lat": 0.011,
+    "lon": 0.0108,
+    "season": 0.01,
+    "demand_lag_2h": 0.0081,
+    "month_cos": 0.0071,
+    "month": 0.0046,
+    "is_weekend": 0.0037,
+    "month_sin": 0.0034,
+    "is_holiday": 0.0004
+  },
+  "xgb_importance": {
+    "demand_lag_1h": "0.2473",
+    "demand_lag_24h": "0.2344",
+    "rolling_mean_3h": "0.099",
+    "station_mean": "0.0655",
+    "is_rush": "0.0619",
+    "hour_cos": "0.061",
+    "is_weekend": "0.0335",
+    "season": "0.0332",
+    "dayofweek": "0.0316",
+    "hour": "0.0301",
+    "hour_sin": "0.0301",
+    "is_holiday": "0.0124",
+    "demand_lag_2h": "0.0119",
+    "month": "0.011",
+    "lon": "0.0099",
+    "month_cos": "0.0098",
+    "lat": "0.0094",
+    "month_sin": "0.0079"
+  },
+  "top_stations": [
+    {
+      "station_id": "JC115",
+      "mean_demand": 6.777,
+      "MAE_XGB": 2.304,
+      "MAE_RF": 2.609,
+      "name": "Grove St PATH"
+    },
+    {
+      "station_id": "HB107",
+      "mean_demand": 4.775,
+      "MAE_XGB": 2.563,
+      "MAE_RF": 2.603,
+      "name": "Hudson Pl & Hoboken Terminal"
+    },
+    {
+      "station_id": "HB609",
+      "mean_demand": 4.241,
+      "MAE_XGB": 2.072,
+      "MAE_RF": 2.086,
+      "name": "River St & 1 St"
+    },
+    {
+      "station_id": "JC109",
+      "mean_demand": 3.588,
+      "MAE_XGB": 1.685,
+      "MAE_RF": 1.718,
+      "name": "Bergen Ave & Sip Ave"
+    },
+    {
+      "station_id": "JC009",
+      "mean_demand": 3.138,
+      "MAE_XGB": 1.532,
+      "MAE_RF": 1.536,
+      "name": "Hamilton Park"
+    },
+    {
+      "station_id": "HB202",
+      "mean_demand": 3.087,
+      "MAE_XGB": 1.6,
+      "MAE_RF": 1.628,
+      "name": "14 St Ferry - 14 St & Shipyard Ln"
+    },
+    {
+      "station_id": "HB502",
+      "mean_demand": 3.061,
+      "MAE_XGB": 1.517,
+      "MAE_RF": 1.512,
+      "name": "11 St & Washington St"
+    },
+    {
+      "station_id": "HB201",
+      "mean_demand": 2.917,
+      "MAE_XGB": 1.586,
+      "MAE_RF": 1.606,
+      "name": "12 St & Sinatra Dr N"
+    },
+    {
+      "station_id": "JC116",
+      "mean_demand": 2.902,
+      "MAE_XGB": 1.537,
+      "MAE_RF": 1.561,
+      "name": "Exchange Pl"
+    },
+    {
+      "station_id": "HB612",
+      "mean_demand": 2.839,
+      "MAE_XGB": 1.568,
+      "MAE_RF": 1.573,
+      "name": "Newark St & Washington St"
+    }
+  ]
+}

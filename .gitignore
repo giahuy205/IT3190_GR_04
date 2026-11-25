@@ -1,0 +1,21 @@
+# Data files (loại trừ các file dữ liệu thô và tập dữ liệu lớn vượt giới hạn GitHub 100MB)
+data/raw/
+data/processed/station_demand_processed.csv
+*.zip
+*.csv.zip
+
+# Python cache & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+env/
+.env/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,16 @@
+{
+  "raw_trips": 1083538,
+  "clean_trips": 1082913,
+  "removed_trips": 625,
+  "final_trips": 1082913,
+  "n_stations": 114,
+  "usertype_share": {
+    "member": 0.763,
+    "casual": 0.237
+  },
+  "median_duration_min": 6.2,
+  "n_samples": 1023828,
+  "zero_share": 0.6,
+  "demand_mean": 1.058,
+  "demand_max": 69
+}

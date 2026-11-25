@@ -1,0 +1,4 @@
+﻿Mô hình,MAE (Test),RMSE (Test),R² Score (Test),MAE (Val),RMSE (Val),R² Score (Val),Thời gian train (s)
+Linear Regression (Baseline),0.9668,1.6715,0.5444,0.9978,1.6662,0.4946,0.4
+Decision Tree Regressor,0.8694,1.5754,0.5953,0.8861,1.5752,0.5483,6.11
+XGBoost Regressor,0.8522,1.4778,0.6439,0.8628,1.4819,0.6002,7.28
